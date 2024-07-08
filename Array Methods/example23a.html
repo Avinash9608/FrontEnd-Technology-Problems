@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using includes()</title>
+    <script>
+      let fruits = ["10", "apple", "grapes", "banana"];
+      document.write(`Values:${fruits}<br>`);
+
+      let result = fruits.includes("10"); // true
+      //let result = fruits.includes(10)); // false   same as switch it will also do strict camparision
+      document.write(`Is 10 present ?:${result}<br>`);
+
+      result = fruits.includes("pineapple");
+      document.write(`Is pineapple present ?:${result}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

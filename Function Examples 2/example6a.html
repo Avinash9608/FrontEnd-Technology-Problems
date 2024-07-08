@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function With this</title>
+    <script>
+      // if we are using this in arrow function then it will refer to enclosing scope
+      //enclosing scope means where the block of code is written
+      //in my case it is written in script tag it has window object and windows has no fname and age
+      let person = {
+        fname: "Amit",
+        age: 21,
+        toString: () => {
+          return `${this.fname},${this.age}`;
+        },
+      };
+      //here this will reference the script tag object that is windows
+      document.write(person);
+    </script>
+  </head>
+  <body></body>
+</html>

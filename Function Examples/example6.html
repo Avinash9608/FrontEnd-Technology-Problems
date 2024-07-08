@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Demo 1</title>
+    <script>
+      var a = 10;
+      function f1() {
+        alert(`inside f1 a is ${a}`);
+      }
+
+      function f2() {
+        alert(`inside f2 a is ${a}`);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; font-size: 120%; font-weight: bold">
+      To call the f1 <a href="JavaScript:f1()">Click Me</a><br />
+      To call the f2
+      <a href="JavaScript:f2()">Click Me</a>
+    </div>
+  </body>
+</html>

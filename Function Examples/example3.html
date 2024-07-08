@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passing Arguments Array</title>
+    <script>
+      function greetings() {
+        document.write(
+          `Function called with ${arguments.length} arguments<br>`
+        );
+        for (let name of arguments) {
+          document.write(`Good Evening ${name}<br>`);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      document.write("<strong>First call</strong><br>");
+      greetings("Avinash", "Aniket", "Mukesh", "Rahul");
+
+      document.write("<strong>Second call</strong><br>");
+      greetings("Avinash", "Aniket");
+
+      document.write("<strong>Third call</strong><br>");
+      greetings();
+    </script>
+  </body>
+</html>

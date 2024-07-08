@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using at(index) Method</title>
+    <script>
+      /*
+        take an integer value and returns the item at that index allowing for 
+        positive and negative indexing
+        to check this method supported by browser or not we have to use the website can i use?
+        */
+      let evens = [2, 4, 6, 8, 10];
+      document.write(`${evens.at(2)}<br>`); //this method given by es22
+      document.write(`${evens.at(-2)}<br>`);
+      document.write(`${evens.at(7)}<br>`); //undefined
+    </script>
+  </head>
+  <body></body>
+</html>

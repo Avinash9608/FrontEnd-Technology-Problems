@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using unshift Method</title>
+    <script>
+      let fruits = ["guava", "apple", "grapes", "banana"]; //unshift will add the elements at zero index
+      document.write(`Size : ${fruits.length}<br>`);
+      document.write(`Values :${fruits}<br>`);
+
+      let size = fruits.unshift("orange");
+      document.write(`Size : ${size}<br>`);
+      document.write(`Values :${fruits}<br>`);
+
+      size = fruits.unshift("kiwi", "pomrgranate", "papaya");
+      document.write(`Size : ${size}<br>`);
+      document.write(`Values :${fruits}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

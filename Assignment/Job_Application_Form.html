@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>Job_Application_Form</title>
+  </head>
+  <body bgcolor="#D1F2EB">
+    <h1 align="center">Job Application Form</h1>
+    <hr />
+    <table align="center" cellspacing="20">
+      <tr>
+        <th align="left"><label for="fname">Full Name</label></th>
+        <td>
+          <input
+            type="text"
+            id="fname"
+            placeholder="Enter your name"
+            size="40"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fjob">Job Title</label></th>
+        <td>
+          <input
+            type="text"
+            id="fjob"
+            placeholder="Enter your job title"
+            size="40"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fcom">Current Company</label></th>
+        <td>
+          <input
+            type="text"
+            id="fcom"
+            placeholder="Enter your  company name"
+            size="40"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fcn">Contact Number</label></th>
+        <td>
+          <select name="language">
+            <option value="JSE">+91</option>
+            <option>+92</option>
+          </select>
+
+          <input
+            type="text"
+            id="fcn"
+            size="30"
+            placeholder="Enter your number"
+          />
+        </td>
+      </tr>
+
+      <tr align="left">
+        <th><label for="fmail">Email</label></th>
+        <td>
+          <input
+            type="email"
+            id="fmail"
+            placeholder="Enter your email"
+            size="40"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fws">Work Status</label></th>
+        <td>
+          <input type="radio" id="fws" name="work" />Full Time
+          <input type="radio" id="fws" name="work" />Part Time
+          <input type="radio" id="fws" name="work" />Per Dim
+          <input type="radio" id="fws" name="work" />Others
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fsal">Salary</label></th>
+        <td>
+          <input type="text" id="fsal" placeholder="salary" size="20" />
+
+          <select name="language">
+            <option value="code">Rupees</option>
+            <option value="code">Dollar</option>
+          </select>
+
+          <select name="language">
+            <option value="code">Yearly</option>
+            <option value="code">Monthly</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fex">Experience</label></th>
+        <td>
+          <input
+            type="text"
+            id="fex"
+            placeholder="Enter your experience in months"
+            size="40"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fcl">Current Location</label></th>
+        <td>
+          <input
+            type="text"
+            id="fcl"
+            placeholder="Enter your current location"
+            size="40"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fpa">Permanent Address</label></th>
+        <td>
+          <textarea
+            rows="5"
+            cols="40"
+            placeholder="Enter permanent address"
+          ></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <th align="left"><label for="fur">Upload Resume</label></th>
+        <td>
+          <input type="file" id="fur" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="submit_page.html"><input type="submit" /></a>
+        </td>
+        <td align="center">
+          <input type="reset" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

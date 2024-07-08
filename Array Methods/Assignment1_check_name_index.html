@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take 5 name from user assignment</title>
+    <script>
+      let arr = [];
+      for (let i = 0; i < 5; i++) {
+        arr[i] = prompt(`Enter name:${i + 1}`);
+      }
+      document.write("Names are:<br>");
+      for (let x of arr) {
+        document.write(`${x}<br>`);
+      }
+
+      let search_name = prompt("Enter name to be searched ");
+      let search = arr.indexOf(search_name);
+      document.write(`<br><br>Search Result:<br>`);
+      document.write(`${search_name} is at pos ${search}<br>`);
+      search = arr.indexOf(search_name, search + 1);
+      document.write(`${search_name} is at pos ${search}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

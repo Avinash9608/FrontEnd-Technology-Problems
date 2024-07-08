@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Basis Results</title>
+    <script>
+      let sub1, sub2, sub3, sub4, sub5;
+      sub1 = Number(prompt("Enter sub1 marks"));
+      sub2 = Number(prompt("Enter sub2 marks"));
+      sub3 = Number(prompt("Enter sub3 marks"));
+      sub4 = Number(prompt("Enter sub4 marks"));
+      sub5 = Number(prompt("Enter sub5 marks"));
+      average = (sub1 + sub2 + sub3 + sub4 + sub5) / 5;
+      if (sub1 && sub2 && sub3 && sub4 && sub5 >= 60 && average > 60)
+        document.write("Promoted to next class ");
+      else document.write("Not Permoted to next class ");
+    </script>
+  </head>
+  <body></body>
+</html>

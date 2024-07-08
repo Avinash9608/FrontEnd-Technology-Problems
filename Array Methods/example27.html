@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using sort() Method</title>
+    <script>
+      let arr = [2, 1, 11, 4, 25, 19, 8, 100, 3, 0];
+      document.write("<b>Before Sorting:</b><br>");
+
+      for (let x of arr) {
+        document.write(`${x}<br>`);
+      }
+
+      arr.sort();
+
+      document.write("<br>");
+      document.write("<b>After Sorting:</b><br>");
+      for (let x of arr) {
+        document.write(`${x}<br>`);
+      }
+      /*output:
+no    Ascii
+0     48
+1     49
+100   49
+11    49
+19    49
+2     50
+25    50
+3     51
+4     52
+8     57
+so for proper and correct output we have to use call back becase this output is based upon string basis
+*/
+    </script>
+  </head>
+  <body></body>
+</html>

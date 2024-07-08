@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Splice Method</title>
+    <script>
+      let fruits = ["guava", "apple", "grapes", "banana"];
+      document.write(`Size : ${fruits.length}<br>`);
+      document.write(`Values :${fruits}<br>`);
+
+      fruits.splice(1, 2, "orange"); // This line will do : go to index 1 remove 2 element and keep orange there
+      // fruits.splice(0, 4, "orange"); // it will delete all elements from 0 index to 4 and add orange in this (size 1)
+      // fruits.splice(0, 14, "orange"); // It will also delete all elements from 0 to 4 (14 even size is more given than array) and add orange
+      document.write(`Size : ${fruits.length}<br>`);
+      document.write(`Values :${fruits}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

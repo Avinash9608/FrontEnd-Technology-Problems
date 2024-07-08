@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forEach Method</title>
+    <script>
+      function display(e) {
+        console.log(e);
+      }
+
+      let nums = [10, 20, 30, 40, 50];
+      //   Long Code
+      for (let i = 0; i < nums.length; i++) {
+        display(nums[i]);
+      }
+      // small code
+      console.log("using Small loop");
+      for (let x of nums) {
+        display(x);
+      }
+      /*
+     Both above loop is the style of imperative style of coding in JavaScript
+     Here we are informing the JavaScript that what to do and how to do also
+     but JavaScript more smart it will know how to do but only need is that what to do 
+     so we have to use the declarative style of coding In programming
+     next ex 13a
+     */
+    </script>
+  </head>
+  <body></body>
+</html>

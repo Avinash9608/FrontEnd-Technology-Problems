@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passing Argument To Functions</title>
+    <script>
+      function greetings(name) {
+        document.write(`Good Evening ${name}<br>`);
+        document.write(`Good Evening ${arguments[1]}<br>`);
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      //   greetings("Avinash");
+      //   greetings(); // it will give undefined
+      greetings("Amit", "sumit");
+      //1st arg copy in Amit and second will be copy in argument array
+    </script>
+  </body>
+</html>

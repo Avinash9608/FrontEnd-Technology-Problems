@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calling Function Using Pseudoprotocol</title>
+    <script>
+      function show() {
+        let x = new Date();
+        // alert(x.toString());
+        document.write(x.toString());
+        /*
+        let x=new Date() vs let x=Date();
+        Both will give the same output but
+        new Date() will return the date object which has some predefined 
+        Methods (get date, gateMin, getHour ect) for print the only date , time 
+        while 
+        Date() is method they do not has the predefined methods
+        */
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; font-size: 120%; font-weight: bold">
+      <a href="javascript:show()">Show Current Date time</a>
+    </div>
+  </body>
+</html>

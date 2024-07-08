@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converting Values To Number</title>
+    <script>
+      let x = "123.9";
+      document.write(x + " " + typeof x + "<br>"); //String
+      let y = Number(x); //Now value is a number 123.9
+      document.write(y + " " + typeof y + "<br>"); //Number
+      let z = parseInt(x); // Now value is a number 123.9
+      document.write(z + " " + typeof z + "<br>");
+      let p = Math.floor(x);
+      document.write(p + " " + typeof p + "<br>"); //Number
+      let m = parseFloat(x);
+      document.write(m + " " + typeof m + "<br>"); //number
+    </script>
+  </head>
+  <body></body>
+</html>

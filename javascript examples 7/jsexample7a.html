@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Uses Internally</title>
+    <script>
+      let a, str;
+      a = prompt("Enter a number ");
+      switch (a) {
+        case 10:
+          str = "You inputted 10";
+          break;
+        case 20:
+          str = "You inputted 20";
+        default:
+          str = "You inputted somthing else";
+      }
+      document.write(`${str}`);
+    </script>
+  </head>
+  <body></body>
+</html>

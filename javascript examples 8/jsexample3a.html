@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print table in table with color</title>
+    <script>
+      let i = 1,
+        n;
+      n = Number(prompt("Enter a number "));
+      document.write(`<h3>Table of ${n}</h3>`);
+      document.write(`<table border=2px>`);
+      //   document.querySelector("tr").style.color = "red";
+      while (i <= 10) {
+        document.write(`<tr><td>${n} * ${i}=${n * i}</tr></td>`);
+        i++;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

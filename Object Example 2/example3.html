@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Challenges</title>
+    <script>
+      let company = {
+        name: "Apple",
+        fundationYear: 1976,
+        productList: [
+          { name: "Iphone", year: 2007 },
+          { name: "IPad", year: 2010 },
+        ],
+        foundedBy: ["Steve Jobs", "Steve Wozniak"],
+        ceo: "Steve Jobs",
+        toString: function () {
+          let productStr = "";
+          for (let p of company.productList) {
+            productStr += p.name + "-" + p.year + ",";
+          }
+          return `<strong>name:</strong>${company.name}<br>
+          <strong>Foundation Year</strong>${company.fundationYear}<br>
+          <strong>Founders:</strong>${company.foundedBy.join(",")}<br>
+          <strong>CEO:</strong>${company.ceo}<br>
+          <strong>Product List:</strong>${productStr}`;
+        },
+        createNewProduct: function (product) {
+          company.productList.push(product);
+        },
+        resign: function () {
+          let str = company.ceo;
+          company.ceo = null;
+          return str;
+        },
+        hireCeo: function (name) {
+          company.ceo = name;
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <script>
+      document.write(`<h3>Company Details</h3>`);
+      document.write(company);
+      document.write("<br><br><br>");
+      document.write(`CEO ${company.resign()} resigned `);
+      document.write(`<h3>After CEO Resignation</h3>`);
+      document.write(company);
+      company.hireCeo("Tim Cook");
+      document.write(`<h3>After Hiring New CEO</h3>`);
+      document.write(company);
+      company.createNewProduct({ name: "IHome", year: 2020 });
+      document.write(`<h3>After Adding New Product</h3>`);
+      document.write(company);
+    </script>
+  </body>
+</html>

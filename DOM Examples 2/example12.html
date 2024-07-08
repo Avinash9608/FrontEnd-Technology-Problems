@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding style</title>
+    <script>
+      // write code to add a crimson color border
+      //on all elements with class attribute highlight
+      function decorate() {
+        let allElem = document.querySelectorAll(".highlight");
+        allElem.forEach((elem) => {
+          elem.style.border = "2px solid crimson";
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <ul id="nav1" class="highlight">
+      <li>Home</li>
+      <li>Products</li>
+      <li>Services</li>
+      <li>Contact</li>
+      <li>About Us</li>
+    </ul>
+    <ul id="nav2" class="highlight">
+      <li>Books</li>
+      <li>Mobiles</li>
+      <li>Laptops</li>
+    </ul>
+    <ul id="nav3" class="highlight">
+      <li>Accesories</li>
+      <li>Clothes</li>
+      <li>Pens</li>
+      <li>Diaries</li>
+    </ul>
+
+    <input type="button" value="Add Border" onclick="decorate();" />
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Style property</title>
+    <script>
+      function operate() {
+        let heading = document.querySelector(`h3`);
+        heading.style.textAlign = "center";
+        //underlibe
+        // heading.style.TextDecoder = "underLine";
+      }
+    </script>
+  </head>
+  <body>
+    <h3 style="color: blue">Our Mission</h3>
+    <p>
+      The mission of the SHARMA COMPUTER ACADEMY is to provide its students with
+      the foundation for lifelong learning
+    </p>
+    <input type="button" value="click me" onclick="operate()" />
+  </body>
+</html>

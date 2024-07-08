@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Java Script Demo</title>
+    <script type="text/javascript">
+      function operate() {
+        // Write code to access all <li> tag of <ul> with id
+        let ul = document.getElementById("nav2");
+        let allLi = ul.getElementsByTagName("li");
+        //   allLi.forEach((li) => {
+        //     console.log(li);
+        //   });
+        // forEach is not a function for html collection and if we want to run forEach then
+
+        let arr = Array.from(allLi);
+        arr.forEach((li) => {
+          console.log(li);
+        });
+
+        // for (let li of allLi) {
+        //   console.log(li);
+        // }
+      }
+    </script>
+  </head>
+
+  <body>
+    <ul id="nav1">
+      <li>Company Profile</li>
+      <li>Investors</li>
+      <li>Share Market</li>
+      <li>Stock Price</li>
+      <li>Tread Market</li>
+    </ul>
+
+    <ul id="nav2">
+      <li>Home</li>
+      <li>Products</li>
+      <li>Services</li>
+      <li>Contact</li>
+      <li>About Us</li>
+    </ul>
+    <input type="button" value="Click me" onclick="operate()" />
+  </body>
+</html>

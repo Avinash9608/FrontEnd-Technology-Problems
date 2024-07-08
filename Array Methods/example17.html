@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Slice Method</title>
+    <script>
+      /* 
+        concat():
+        syntax: arr.concat(arg1, arg2,...);
+        suppose arr has 10,20, 30 and the arg we pass are 40,50 
+        then it will return an array of 10,20,30,40,50
+        ex2: suppose we has 2 array a and b then 
+        a.concat(b);-then it will return all elemnt of a and b 
+        */
+      let indoor = ["carrom", "chess", "snooker"];
+      let outdoor = ["cricket", "football", "hockey", "vollwyball"];
+
+      let allSports = indoor.concat(outdoor);
+
+      document.write(`Size of indoor:${indoor.length}<br>`);
+      document.write(`Values:${indoor}<br>`);
+
+      document.write(`Size of outdoor:${outdoor.length}<br>`);
+      document.write(`Values:${outdoor}<br>`);
+
+      document.write(`Size of allSports:${allSports.length}<br>`);
+      document.write(`Values:${allSports}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

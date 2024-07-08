@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Inputted number is single or double or more than three digit numbers
+    </title>
+    <script>
+      let a;
+      a = prompt("Enter an integer ");
+      if (isNaN(a) == true)
+        document.write("You did not input a numberic value");
+      else {
+        document.write(a.length + " digit number <br>");
+        a = Number(a);
+        if (a >= 0) document.write("positive ");
+        else document.write("negative ");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

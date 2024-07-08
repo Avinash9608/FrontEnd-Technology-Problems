@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Understanding Equality where data in different order in object
+    </title>
+    <script>
+      let person1 = {
+        name: "Avinash",
+        gender: "male",
+      };
+
+      let person2 = {
+        gender: "male",
+        name: "Avinash",
+      };
+
+      function compareObj(p1, p2) {
+        return JSON.stringify(p1) === JSON.stringify(p2);
+      }
+      document.write(compareObj(person1, person2));
+      //This problem is solved by JavaScript Library that's name is loadash
+      //Library is the collection of predefined functions
+    </script>
+  </head>
+  <body></body>
+</html>

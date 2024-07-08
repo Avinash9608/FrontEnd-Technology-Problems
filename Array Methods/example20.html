@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Splice Method</title>
+    <script>
+      /* ouestion: let prices=[100,200,300]; // in this array we have to replace all
+element with 400 sol: price.splice(0,3,400,400,400); */
+
+      let prices = [100, 200, 300];
+      document.write(`Size : ${prices.length}<br>`);
+      document.write(`Values :${prices}<br>`);
+
+      prices.splice(0, 3, 400, 400, 400); // This line will do : go to index 2 and keep orange  there
+      document.write(`Size : ${prices.length}<br>`);
+      document.write(`Values :${prices}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

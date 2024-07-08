@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval() and clearInterval() Demo</title>
+    <script>
+      let id; // This is global var
+      function showDateTime() {
+        let today = new Date();
+        console.log(today);
+      }
+
+      function startTimer() {
+        console.log("Clock about to start!");
+        id = setInterval(showDateTime, 1000); // here id returned by setInterval is recived by id
+      }
+
+      function stopTimer() {
+        clearInterval(id);
+        console.log("Clock stopped");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="startTimer()" value="Start" />
+    <input type="button" onclick="stopTimer()" value="stop" />
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeColor(ref) {
+        //Change page color as per the button clicked
+        let text = ref.nextSibling;
+        // alert(text.nodeValue.trim());
+        let str = text.nodeValue.trim();
+        switch (str) {
+          case "Red":
+            document.body.bgColor = "red";
+            break;
+          case "green":
+            document.body.bgColor = "green";
+            break;
+          case "blue":
+            document.body.bgColor = "blue";
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h3>Select an option to chnage page background color</h3>
+      <input type="radio" name="r1" onclick="changeColor(this)" />Red
+      <br />
+      <input type="radio" name="r1" onclick="changeColor(this)" />green
+      <br />
+      <input type="radio" name="r1" onclick="changeColor(this)" />blue
+      <br />
+    </div>
+  </body>
+</html>

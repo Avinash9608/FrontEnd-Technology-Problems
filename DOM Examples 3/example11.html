@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing Para</title>
+    <script>
+      function removePara() {
+        let div = document.querySelector("div");
+        let para = div.firstElementChild;
+        console.log(para);
+        div.removeChild(para);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="d1">
+      <p id="p1">This is first paragraph.</p>
+      <p id="p2">This is second paragraph.</p>
+    </div>
+    <input type="button" value="remove para" onclick="removePara()" />
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Equality</title>
+    <script>
+      let person1 = {
+        name: "Avinash",
+        gender: "male",
+      };
+
+      let person2 = {
+        name: "Avinash",
+        gender: "male",
+      };
+
+      let person3 = {
+        name: "Avinash",
+        gender: "female",
+      };
+
+      function compareObj(p1, p2) {
+        return JSON.stringify(p1) === JSON.stringify(p2);
+      }
+      document.write(compareObj(person1, person2));
+      document.write("<br>");
+      document.write(compareObj(person1, person3));
+    </script>
+  </head>
+  <body></body>
+</html>

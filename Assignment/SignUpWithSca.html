@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUpWithSca</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d117a4c5b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      p {
+        font-family: "Raleway", sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .p {
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      #mod {
+        text-align: center;
+        background-color: gainsboro;
+        border-radius: 2px 2px;
+      }
+
+      .input-icons i {
+        position: absolute;
+      }
+
+      .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      .fa-regular,
+      .fa-solid {
+        padding: 10px;
+        /* color: green; */
+        min-width: 10px;
+        text-align: center;
+      }
+
+      .input-field {
+        width: 40%;
+        padding: 10px;
+        text-align: left;
+        box-shadow: 1px 1px 1px 1px;
+      }
+      .bg {
+        /* background-color: darkgrey; */
+        width: 60%;
+        padding: 100px;
+        margin: 150px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* height: 20px; */
+        /* align-items: center; */
+      }
+      .circle-form {
+        width: 600px;
+        margin: auto;
+        padding: 50px;
+        border-radius: 50px 0px 50px 0px;
+        border: 5px solid darkgrey;
+        background-color: darkgrey;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        justify-content: center;
+      }
+      input[type="text"] {
+        width: 100%;
+      }
+      input[type="email"] {
+        width: 100%;
+      }
+      input[type="submit"] {
+        align-items: center;
+      }
+      .img-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="circle-form bg-warning py-5">
+        <form style="max-width: 450px; margin: auto">
+          <div class="center">
+            <p>Sign Up With SCA</p>
+          </div>
+          <div class="img-container">
+            <img
+              src="../media/images/sca_logo.png"
+              width="100px"
+              height="40px"
+            />
+          </div>
+          <div class="input-icons">
+            <label class="p">Full Name:</label>
+            <br /><i class="fa-regular fa-id-card"></i
+            ><input
+              class="input-field"
+              type="text"
+              placeholder="     Full Name"
+            /><br />
+          </div>
+
+          <div class="input-icons">
+            <label class="p">Email:</label><br /><i
+              class="fa-regular fa-envelope"
+            ></i
+            ><input
+              class="input-field"
+              type="email"
+              placeholder="     Email"
+            /><br />
+          </div>
+          <div class="input-icons">
+            <label class="p">Contact Number:</label><br /><i
+              class="fa-solid fa-mobile-screen-button"
+            ></i
+            ><input
+              class="input-field"
+              type="text"
+              placeholder="    Contect Number"
+            /><br />
+          </div>
+
+          <div class="input-icons">
+            <label class="p">Address:</label><br />
+            <i class="fa-solid fa-house"></i>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="      Address"
+            /><br />
+          </div>
+          <div class="img-container">
+            <input
+              type="button"
+              value="Submit"
+              style="
+                color: white;
+                background-color: rgb(255, 128, 0);
+                border-color: rgb(255, 128, 0);
+                padding: 12px 30px;
+                border-radius: 10px;
+              "
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

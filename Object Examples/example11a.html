@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Object acces through for in loop</title>
+    <script>
+      /* write a JavaScript Code to access all the properties of
+      myCar objects and it's nested object using for in loop*/
+      let myCar = new Object();
+      myCar.model = "Baleno";
+      myCar.year = 2014;
+
+      myCar.stereo = new Object();
+      myCar.stereo.name = "kenWood";
+      myCar.stereo.maxVol = 30;
+      for (let key in myCar) {
+        console.log(key + ":" + myCar[key]);
+      }
+      for (let key in myCar.stereo) {
+        console.log(key + ":" + myCar.stereo[key]);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

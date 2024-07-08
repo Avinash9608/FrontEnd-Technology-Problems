@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Equality</title>
+    <script>
+      let person1 = {
+        name: "sachin",
+        gender: "male",
+      };
+
+      let person2 = {
+        name: "sachin",
+        gender: "male",
+      };
+
+      function compareObj(p1, p2) {
+        return p1.name === p2.name && p1.gender === p2.gender;
+      }
+
+      // This function is ok when we have less data
+      document.write(`${compareObj(person1, person2)}`);
+    </script>
+  </head>
+  <body></body>
+</html>

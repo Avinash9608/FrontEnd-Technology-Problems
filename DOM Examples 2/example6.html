@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Image by click</title>
+    <script>
+      function changeLogo() {
+        //change the image
+        let img = document.querySelector("img");
+        img.setAttribute("src", "../media/images/bg2.jpg");
+        //img.setAttribute("src", "../media/images/bg1.jpg");
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My Pic</h3>
+    <img src="../media/images/bg1.jpg" /><br />
+    <input type="button" value="change Logo" onclick="changeLogo()" />
+  </body>
+</html>

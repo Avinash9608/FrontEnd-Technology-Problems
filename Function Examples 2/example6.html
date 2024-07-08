@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymus Function With this</title>
+    <script>
+      let person = {
+        fname: "Amit",
+        age: 21,
+        toString: function () {
+          return `${this.fname},${this.age}`; // here this is person so fname-Amit and age is 21
+        },
+      };
+      //this which is written in method can reference  to it's calling object
+      // but in arrow function it can not represent any calling object
+      document.write(person); // this will call person.toString
+    </script>
+  </head>
+  <body></body>
+</html>

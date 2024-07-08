@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Methods</title>
+    <script>
+      let myCar = new Object();
+      myCar["company"] = "Maruti";
+      myCar["model"] = "Baleno";
+      myCar["year"] = 2014;
+      myCar["start"] = function () {
+        console.log("Starting the car ");
+      };
+
+      myCar["accelerate"] = function () {
+        console.log("accelerating  the car ");
+      };
+
+      myCar["stop"] = function () {
+        console.log("Stoping the car ");
+      };
+    </script>
+  </head>
+  <body>
+    <script>
+      myCar.start();
+      myCar.accelerate();
+      myCar.stop();
+      // start stop accelerate thses all three are logically a function
+      //but basically it is property of anonomuss functions
+      /*
+      Object conatins properties and properties contains 2 things 
+      some contais values and some conatain methods and functions
+      */
+    </script>
+  </body>
+</html>

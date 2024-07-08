@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using join Method</title>
+    <script>
+      let friends = ["Anupam", "Deepak", "Chandra", "Nakul"];
+
+      //jion will return only one string after joining
+      let str = friends.join(); //if no arg pass then it will sepearte with comma
+      document.write(`${str}`);
+      document.write("<br>");
+
+      str = friends.join("#");
+      document.write(`${str}`);
+
+      str = friends.join(" ");
+      document.write(`${str}`);
+    </script>
+  </head>
+  <body></body>
+</html>

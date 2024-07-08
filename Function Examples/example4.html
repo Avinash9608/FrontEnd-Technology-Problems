@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find sum and average</title>
+    <script>
+      function average() {
+        let sum = 0;
+        for (let n of arguments) {
+          //   sum += n;
+          sum += Number(n);
+        }
+        document.write(`Sum is ${sum}<br>`);
+        document.write(`Average is ${sum / arguments.length}<br`);
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      document.write("<strong>First call</strong><br>");
+      average(5, 20, 9, 11); // no pass then no recived by avg
+      //   average("5", 20, 9, 11);
+      document.write("<strong>Second call</strong><br>");
+      average(4, 7, 1);
+      document.write("<strong>Third call</strong><br>");
+      average(2, 6, 7, 11, 9, 15);
+    </script>
+  </body>
+</html>

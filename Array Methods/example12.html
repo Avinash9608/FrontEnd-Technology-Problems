@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Splice Method</title>
+    <script>
+      let fruits = ["guava", "apple", "grapes", "banana"];
+      document.write(`Size : ${fruits.length}<br>`);
+      document.write(`Values :${fruits}<br>`);
+
+      /* 
+      Array do not allow for negative indexing it will show undefined 
+      but it's method allow us to use negative indexing
+      For array method it has two indexes ex:
+      banana has 3 and -1 index
+      grapes has 2 and -2 index 
+      apple has 1 and -3 index
+      guava has 0 and -4 index
+      these negative indexing only for array methods  
+      */
+      fruits.splice(-1); //this will delete last value which is banana
+      document.write(`Size : ${fruits.length}<br>`);
+      document.write(`Values :${fruits}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

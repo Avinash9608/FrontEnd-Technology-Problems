@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem With setAttribute</title>
+    <script>
+      function operate() {
+        // Can you find the problem with this code
+        let heading = document.querySelector(`h3`);
+        heading.setAttribute("style", "text-align:center");
+        // this will set your h3 as center but remove their set previous colour that i blue
+        // and it's new by defalut color is black
+      }
+    </script>
+  </head>
+  <body>
+    <h3 style="color: blue">Our Mission</h3>
+    <p>
+      The mission of the SHARMA COMPUTER ACADEMY is to provide its students with
+      the foundation for lifelong learning
+    </p>
+    <input type="button" value="click me" onclick="operate()" />
+  </body>
+</html>

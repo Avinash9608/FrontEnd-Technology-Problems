@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUpWithSca</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(../media/images/registration_image.jpeg);
+      }
+      .bg {
+        width: 60%;
+        padding: 100px;
+        margin: 150px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px;
+      }
+      .heading {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: rgb(5, 77, 78);
+        font-size: 22px;
+        display: block;
+        margin-left: 180px;
+        margin-right: 50px;
+        width: 60%;
+        justify-content: center;
+      }
+      .circle-form {
+        width: 500px;
+        margin: 1px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 5px solid rgb(177, 77, 11);
+        background-color: rgb(177, 77, 11);
+        text-align: right;
+      }
+      .text {
+        color: whitesmoke;
+        
+        
+      }
+      label {
+        display: inline;
+
+    }
+      .img-container{
+        text-align: right;
+      }
+      .input-field {
+        width: 35%;
+        height: 70%;
+        padding: 4px;
+        margin: 5px;
+        text-align: left;
+        border-radius: 50px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="heading">Register New Account</div>
+      <div class="circle-form bg-warning py-5">
+        <form style="max-width: 450px; margin: auto">
+          <div>
+            <label class="text" style="margin: 10px 110px;">Email</label>
+            <input class="input-field" type="text" placeholder="Your email" />
+          </div>
+
+          <div>
+            <label class="text" style="margin: 10px 84px;">Username</label>
+            <input class="input-field" type="text" placeholder="Your username" />
+          </div>
+
+          <div>
+            <label class="text" style="margin: 10px 87px;">Password</label>
+            <input class="input-field" type="text" placeholder="Your password" />
+          </div>
+
+          <div>
+            <label class="text" style="margin: 10px 30px;">Confirm Password</label>
+            <input class="input-field" type="text" placeholder="Retype password" />
+          </div><br>
+
+          <div style="margin: 10px 55px;">
+            <input type="checkbox"  />
+            <!-- I agree to have read the <a href="#">terms of service</a> -->
+            <label class="text" style="padding-left: 5px;" >I agree to have read the <a href="#">terms of service</a></label
+            >
+          </div><br>
+          <div class="img-container">
+            <input
+              type="button"
+              value="Register"
+              style="
+                color: white;
+                background-color: rgb(87, 46, 5);
+                border-color: rgb(255, 128, 0);
+                padding: 7px 90px;
+                border-radius: 10px;
+               
+              "
+            />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

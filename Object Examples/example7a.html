@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checking Whether Property Exists Or Not</title>
+    <script>
+      let myCar = new Object();
+      myCar["company"] = "Maruti";
+      myCar["model"] = "Baleno";
+      myCar["year"] = undefined; // here property is but value is undefined
+
+      //delete myCar.year; // This will delete the property of year from myCar object
+
+      console.log("company" in myCar); // Space is not allowed in the argument
+      console.log("model" in myCar);
+      console.log("year" in myCar);
+      /* No of loop in JavaScript 
+      1. while
+      2. do.. while
+      3. for
+      4. for in
+      5. for off
+      6. forEach ->callback
+      4 &5  we use it in array as well as object
+      */
+    </script>
+  </head>
+  <body></body>
+</html>

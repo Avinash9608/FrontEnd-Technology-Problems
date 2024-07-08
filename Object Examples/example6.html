@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete operator will delete property of object</title>
+    <script>
+      let myCar = new Object();
+      myCar["company"] = "Maruti";
+      myCar["model"] = "Baleno";
+      myCar["year"] = 2014;
+      console.log("My Car Details: ");
+      console.log("company: " + myCar.company);
+      console.log("model " + myCar.model);
+      console.log("year: " + myCar.year);
+      delete myCar.year; // this will delete the year property from myCar object
+      console.log("My Car Details: ");
+      console.log("company: " + myCar.company);
+      console.log("model " + myCar.model);
+      console.log("year: " + myCar.year); //undefined
+      console.log("color: " + myCar.color); //undefined
+    </script>
+  </head>
+  <body></body>
+</html>

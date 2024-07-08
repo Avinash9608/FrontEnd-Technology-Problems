@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallBack Function Using Anonymus Function</title>
+    <script>
+      let x = 1;
+      let y = setInterval(function () {
+        document.write(`${x}<br>`);
+        x++;
+        if (x === 11) {
+          document.write("done!!");
+          clearInterval(y);
+        }
+      }, 1000);
+    </script>
+  </head>
+  <body></body>
+</html>

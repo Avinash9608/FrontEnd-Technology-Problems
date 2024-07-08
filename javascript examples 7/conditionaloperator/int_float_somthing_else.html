@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check inputted number</title>
+    <script>
+      let a, str;
+      a = prompt("Enter a number ");
+      if (isNaN(a)) str = "You did not input a number ";
+      else {
+        a = Number(a);
+        if (a % 1 !== 0) str = "float";
+        else str = "num";
+      }
+      document.write(`${str}`);
+    </script>
+  </head>
+  <body></body>
+</html>

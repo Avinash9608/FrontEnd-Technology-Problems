@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checking Whether Property Exists Or Not</title>
+    <script>
+      let myCar = new Object();
+      myCar["company"] = "Maruti";
+      myCar["model"] = "Baleno";
+      myCar["year"] = 2014;
+
+      delete myCar.year; // This will delete the property of year from myCar object
+
+      console.log("company" in myCar); // Space is not allowed in the argument
+      console.log("model" in myCar);
+      console.log("year" in myCar);
+    </script>
+  </head>
+  <body></body>
+</html>

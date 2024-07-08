@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Image by click</title>
+    <script>
+      function createLink() {
+        //change the image
+        let a = document.querySelector("a");
+        let input = prompt("enter website name");
+        a.setAttribute("href", "input");
+        //img.setAttribute("src", "../media/images/bg1.jpg");
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Generate Website Link</h3>
+    <a href="http://" +input>input</a><br />
+    <input type="button" value="Create Website Link" onclick="createLink()" />
+  </body>
+</html>

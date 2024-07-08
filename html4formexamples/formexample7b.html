@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Form Tag Demo</title>
+    <script type="text/javascript">
+      function showing() {
+        var str = document.getElementById("username").value;
+        alert("Hello " + str);
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      What is your name?<input type="text" name="user" id="username" /><br />
+      <input type="button" value="Click Me" onclick="showing()" />
+    </form>
+  </body>
+</html>

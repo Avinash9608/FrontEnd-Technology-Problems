@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Slice Method</title>
+    <script>
+      /* splice() vs slice()
+        splice() -> It change the value of array . It is mutable
+        slice() -> It do not change the value of array . It is immutable
+        Synatx of slice():
+        arr.slice(start[, end]);
+        start = 2 and end = 4
+        it will give the copy of element of idex 2,3 (it stop one index before the end)
+         */
+      let fruits = ["guava", "apple", "grapes", "banana"];
+      document.write(`Size : ${fruits.length}<br>`);
+      document.write(`Values :${fruits}<br>`);
+
+      let fruits2 = fruits.slice(1, 3); // It will copy elements at index 1 and 2
+      document.write(`Origianl Array Values:${fruits}<br>`);
+      document.write(`Size : ${fruits2.length}<br>`);
+      document.write(`Values :${fruits2}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting the style of Ordered List Marker</title>
+    <style>
+      body {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+      ol li {
+        background-color: #ddd;
+        padding: 5px;
+      }
+      ol.in li {
+        list-style-position: inside;
+      }
+      ol.out li {
+        list-style-position: outside;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List Marker Position - Inside</h2>
+    <ol class="in">
+      <li>Fasten your seatbelt</li>
+      <li>
+        Start the car's engine and take a closer look the instrument cluster for
+        any warning sign
+      </li>
+      <li>Look around carefully and go.</li>
+    </ol>
+
+    <h2>List Marker Position - Outside</h2>
+    <ol class="out">
+      <li>Fasten your seatbelt</li>
+      <li>
+        Start the car's engine and take a closer look the instrument cluster for
+        any warning sign
+      </li>
+      <li>Look around carefully and go.</li>
+    </ol>
+  </body>
+</html>
